@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--highlight-color: #bbff34;
+}
+
+html {
+	height: 100%;
+	font-size: 12px;
+}
+
+body {
+	min-height: 100%;
+	background-color: #111;
+	color: #fff;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile,
+.profile__social-link {
+	border-radius: 8px;
+}
+
+.profile {
+	background-color: #222;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	margin: auto 0;
+	padding: 32px;
+}
+
+.profile__avatar {
+	width: 64px;
+	border-radius: 50%;
+}
+
+.profile__user-name {
+	font-size: 1.6rem;
+}
+
+.profile__region {
+	color: var(--highlight-color);
+}
+
+.profile > div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 8px;
+}
+
+.profile > div:first-of-type {
+	gap: 4px;
+}
+
+.profile > div:last-of-type {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.profile__social-link {
+	background-color: #333;
+	padding: 8px 0;
+	color: inherit;
+}
+
+.profile__social-link:hover {
+	background-color: var(--highlight-color);
+	color: #000;
+}
+
+.attribution {
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 16px 0;
+}
+
+.attribution a {
+	color: #666;
+}
